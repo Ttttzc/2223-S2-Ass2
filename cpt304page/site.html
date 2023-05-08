@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TravelPlanner Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .form-container {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #holidaysSection, #climateSection, #lodgingSection {
+            margin-top: 2rem;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TravelPlanner Site</h1>
+
+        <div class="form-container">
+            <div class="form-group">
+                <label for="select-nation">Pick a nation:</label>
+                <select id="select-nation">
+                    <option value="none">None</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="select-festivity">Pick a festivity:</label>
+                <select id="select-festivity">
+                    <option value="none">None</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="select-territory">Pick a province/state:</label>
+                <select id="select-territory">
+                    <option value="none">None</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="select-municipality">Pick a municipality:</label>
+                <select id="select-municipality">
+                    <option value="none">None</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <button id="festivity-btn">Fetch Public Holidays</button>
+            <button id="climate-btn">Fetch Climate Details</button>
+            <button id="lodging-btn">Fetch Lodging Details</button>
+        </div>
+
+        <div id="holidaysSection" style="display: block">
+            <h3>Public Holidays:</h3>
+            <ul id="festivity-list"></ul>
+        </div>
+
+        <div id="climateSection" style="display: none">
+            <h3>Climate Details:</h3>
+            <ul id="climate-list"></ul>
+        </div>
+
+        <div id="lodgingSection" style="display: none">
+            <h3>Lodging Rental Details :</h3>
+            <ul id="lodging-list"></ul>
+        </div>
+    </div>
+
+    <script src="primary.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>TravelPlanner Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>TravelPlanner Site</h1>
+
+<div>
+    <label for="select-nation">Pick a nation:</label>
+    <select id="select-nation">
+        <option value="none">None</option>
+    </select>
+
+    <br>
+
+    <label for="select-festivity">Pick a festivity:</label>
+    <select id="select-festivity">
+        <option value="none">None</option>
+    </select>
+    <br>
+
+    <label for="select-territory">Pick a province/state:</label>
+    <select id="select-territory">
+        <option value="none">None</option>
+    </select>
+    <br>
+
+    <label for="select-municipality">Pick a municipality:</label>
+    <select id="select-municipality">
+        <option value="none">None</option>
+    </select>
+</div>
+
+<div>
+    <button id="festivity-btn">Fetch Public Holidays</button>
+    <button id="climate-btn">Fetch Climate Details</button>
+    <button id="lodging-btn">Fetch Lodging Details</button>
+</div>
+
+<div id="holidaysSection" style="display: block">
+    <h3>Public Holidays:</h3>
+    <ul id="festivity-list"></ul>
+</div>
+
+<div id="climateSection" style="display: none">
+    <h3>Climate Details:</h3>
+    <ul id="climate-list"></ul>
+</div>
+
+
+<div id="lodgingSection" style="display: none">
+    <h3>Lodging Rental Details :</h3>
+    <ul id="lodging-list"></ul>
+</div>
+
+<script src="primary.js"></script>
+
+</body>
+</html> -->
